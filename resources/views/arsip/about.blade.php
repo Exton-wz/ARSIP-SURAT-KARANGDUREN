@@ -12,6 +12,7 @@
                  class="me-4"
                  style="width: 120px; height: 160px; object-fit: contain; border-radius: 8px; border:1px solid #ddd;">
             
+                 
             <div>
                 <p class="mb-1">Aplikasi ini dibuat oleh:</p>
                 <p class="mb-1"><b>Nama:</b> Yosanda Nurfriyandika </p>
