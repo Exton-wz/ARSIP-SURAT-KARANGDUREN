@@ -69,14 +69,14 @@ Aplikasi ini dirancang untuk membantu pengelolaan dokumen surat secara digital, 
 - **Konfirmasi Hapus Surat**  
   ![Hapus Arsip](public/images/hapus_arsip.png)
 - **Preview Surat PDF**  
-  ![Lihat Arsip](public/images/lihat_arsip.png)
+  ![Lihat Arsip](public/images/lihat-arsip.png)
 - **Kelola Kategori Surat**  
   ![Dashboard Kategori](public/images/dashboard_kategori.png)
 - **Tambah Kategori Baru**  
   ![Tambah Kategori](public/images/tambah_kategori.png)
 - **Edit Kategori Surat**  
-  ![Edit Kategori](public/images/edit_kategori.png)
+  ![Edit Kategori](public/images/edit-kategori.png)
 - **Hapus Kategori**  
-  ![Hapus Kategori](public/images/Yosanda.png)
+  ![Hapus Kategori](public/images/hapus.png)
 - **Profil Pengembang**  
   ![About](public/images/about.png)
