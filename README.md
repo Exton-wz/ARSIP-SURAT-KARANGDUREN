@@ -77,6 +77,6 @@ Aplikasi ini dirancang untuk membantu pengelolaan dokumen surat secara digital, 
 - **Edit Kategori Surat**  
   ![Edit Kategori](public/images/edit-kategori.png)
 - **Hapus Kategori**  
-  ![Hapus Kategori](public/images/hapus.png)
+  ![Hapus Kategori](public/images/hapus-kategori.png)
 - **Profil Pengembang**  
   ![About](public/images/about.png)

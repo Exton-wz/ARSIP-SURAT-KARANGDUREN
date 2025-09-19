@@ -28,14 +28,36 @@ Klik "Lihat" pada kolom aksi untuk menampilkan surat.</p>
             <td>{{ $arsip->judul }}</td>
             <td>{{ $arsip->waktu_pengarsipan }}</td>
             <td>
-                <form action="{{ route('arsip.destroy',$arsip->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Apakah Anda yakin ingin menghapus surat ini?')">
-                    @csrf @method('DELETE')
-                    <button class="btn btn-danger btn-sm">Hapus</button>
-                </form>
+                <!-- Tombol hapus buka modal -->
+                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalHapus{{ $arsip->id }}">
+                    Hapus
+                </button>
                 <a href="{{ route('arsip.download',$arsip->id) }}" class="btn btn-warning btn-sm">Unduh</a>
                 <a href="{{ route('arsip.lihat',$arsip->id) }}" class="btn btn-info btn-sm">Lihat >></a>
             </td>
         </tr>
+
+        <!-- Modal Konfirmasi Hapus -->
+        <div class="modal fade" id="modalHapus{{ $arsip->id }}" tabindex="-1" aria-labelledby="modalLabel{{ $arsip->id }}" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered"> <!-- Tambahkan modal-dialog-centered -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel{{ $arsip->id }}">Konfirmasi Hapus</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Apakah Anda yakin ingin menghapus surat <strong>{{ $arsip->judul }}</strong>?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <form action="{{ route('arsip.destroy',$arsip->id) }}" method="POST" class="d-inline">
+                    @csrf @method('DELETE')
+                    <button class="btn btn-danger">Hapus</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         @empty
         <tr><td colspan="5" class="text-center">Belum ada arsip surat</td></tr>
         @endforelse
