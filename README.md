@@ -28,7 +28,7 @@ Aplikasi ini dirancang untuk membantu pengelolaan dokumen surat secara digital, 
 ## Cara Instalasi
 1. Clone repository:
    ```
-   git clone https://github.com/divaadl/karangduren-arsip
+   git clone https://github.com/Exton-wz/ARSIP-SURAT-KARANGDUREN.git
    ```
 2. Masuk ke direktori project:
    ```
@@ -61,11 +61,11 @@ Aplikasi ini dirancang untuk membantu pengelolaan dokumen surat secara digital, 
 
 ## Dokumentasi Tampilan
 - **Dashboard Arsip Surat**  
-  ![Dashboard](public/images/dashboard.png)
+  ![Dashboard](public/images/halaman-utama-arsip.png)
 - **Form Input Surat**  
-  ![Tambah Arsip](public/images/tambah_arsip.png)
+  ![Tambah Arsip](public/images/tambah-arsip-surat.png)
 - **Edit Data Surat**  
-  ![Edit Arsip](public/images/edit_arsip.png)
+  ![Edit Arsip](public/images/edit-arsip.png)
 - **Konfirmasi Hapus Surat**  
   ![Hapus Arsip](public/images/hapus_arsip.png)
 - **Preview Surat PDF**  
